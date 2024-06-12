@@ -8,7 +8,7 @@ const initMap = () => {
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
-      center: [7.610020209998718,47.54688235541435], 
+      center: [7.570396922242262,47.55467439287263], 
       zoom: zoom
   });
   map.addControl(new mapboxgl.NavigationControl());
@@ -20,7 +20,7 @@ const initMap = () => {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [7.610020209998718,47.54688235541435]
+        coordinates: [7.570396922242262,47.55467439287263]
       },
       properties: {
         title: 'Sennheimerstrasse Basel',

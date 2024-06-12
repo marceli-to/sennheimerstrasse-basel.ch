@@ -55,7 +55,7 @@
 /* State classes */
 .is-active.is-available [class^="iso-cls-"],
 .is-active.is-available[class^="iso-cls-"] {
-  fill: #365b74;
+  @apply fill-mocha
 }
 
 .is-active.is-taken [class^="iso-cls-"],
@@ -68,7 +68,7 @@
 }
 
 [data-object].is-active {
-  @apply !bg-steel !bg-opacity-20;
+  @apply !bg-mocha !bg-opacity-20;
 }
 
 /* Floor classes */

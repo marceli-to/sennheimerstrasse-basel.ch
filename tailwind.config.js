@@ -19,8 +19,6 @@ export default {
       },
 
       colors: {
-        'steel': '#355B73',
-        'cloud': '#C2CEDB',
         'pewter': '#626362',
         'mocha': '#876853',
         'almond': '#d5c8bd',
