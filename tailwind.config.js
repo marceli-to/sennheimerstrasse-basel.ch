@@ -22,6 +22,7 @@ export default {
         'pewter': '#626362',
         'mocha': '#876853',
         'almond': '#d5c8bd',
+        'sand': '#9f8675'
       },
 
       fontFamily: {
