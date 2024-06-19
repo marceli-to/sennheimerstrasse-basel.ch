@@ -47,8 +47,8 @@ class Apartments extends Tags
     ];
 
     $reference_date = [
-      'building_1' => '1. September 2024',
-      'building_2' => '1. Oktober 2024',
+      'building_1' => '1. Dezember 2024',
+      'building_2' => '1. Dezember 2024',
       'building_3' => '1. Dezember 2024',
     ];
 
