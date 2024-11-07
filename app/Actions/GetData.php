@@ -5,7 +5,6 @@ use Illuminate\Support\Facades\Storage;
 
 class GetData
 {
-  
   // All possible listing status
   protected $listing_status_all = ["pre", "act", "dis", "arc", "rem"];
   protected $listing_status_active = ["pre", "act", "dis"];
@@ -30,12 +29,12 @@ class GetData
     $data = collect(json_decode($data, true));
 
     // Removed for fix (09.11.2023)
-    // $states = $this->getState($data);
-    // $data = $data->map(function ($apartment) use ($states) {
-    //   $apartment['state'] = $states[$apartment['reference']] ?? $this->status_free;
-    //   return $apartment;
-    // });
-    // $data = $data->unique('reference');
+    $states = $this->getState($data);
+    $data = $data->map(function ($apartment) use ($states) {
+      $apartment['state'] = $states[$apartment['reference']] ?? $this->status_free;
+      return $apartment;
+    });
+    $data = $data->unique('reference');
     // -- end removed for fix
 
     // Added for fix (09.11.2023)
